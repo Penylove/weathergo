@@ -1,0 +1,102 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+@font-face {
+    font-family: "bauhaus";
+    src: url("BauhausRegular.ttf");
+         
+  }
+  body{
+      font-family: bauhaus;
+  }
+.logo{
+    /* background-color:#323234; */
+    display: inline;
+
+}
+
+.logo h1{
+    display:inline;
+    /* color:#fff; */
+}
+
+.nav .list-items{
+    display:inline-block;
+    float:right;
+}
+
+.nav .list-items ul li{
+    display:inline-block;
+    list-style-type: none;
+    padding:.2em;
+}
+
+.nav .list-items ul li a{
+    text-decoration: none;
+    
+
+}
+.main-page{
+    text-align:center;
+    margin-top:9em;
+    font-family: bauhaus;
+}
+
+.main-page .msg h1{
+    font-size:400%;
+}
+.main-page .msg h4{
+    font-size:200%;
+}
+
+.main-page .msg h5{
+    font-size:150%;
+}
+
+.search{
+    margin-top:3em;
+}
+
+.search input{
+    padding:.62em;
+    display: block;
+    margin:0 auto;
+   
+    
+}
+
+.search .seaInp{
+    border-radius:5px;
+    border-style:none;
+    border-bottom:1px solid black;
+    width:15em;
+}
+.search .go{
+    margin-top:0.6em;
+    width:10em;
+    border-radius:5px;
+    border-style:none;
+    cursor:pointer;
+}
+
+/* input and anchor animations */
+
+.search .seaInp:focus{
+    outline:none;
+    border-bottom:1px solid green;
+}
+
+.search .go{
+    background-color:green;
+    color:white;
+   
+}
+
+.search .go:hover{
+    box-shadow: 4px 1px 4px 5px #ccc;
+}
+input:focus{
+    outline-offset: 0;
+}

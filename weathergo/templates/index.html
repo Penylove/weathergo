@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Weather Go </title>
+</head>
+<body>
+    <header class="header-main">
+        <nav class="nav">
+            <div class="logo">
+                <img src="" alt="logo of weather go">
+                <h1 class="weatherho">
+                    Weather Go
+                </h1>
+            </div>
+            <div class="list-items right">
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SIGN UP</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <main class="main-page">
+                <div class="msg">
+                    <h1>Welcome to Weather Go</h1>
+                    <h4>Get your weather information on the Go</h4>
+                    <h5>Get Started, Type location</h5>
+                </div>
+                <div class="search">
+                    <form action="{{url_for('result')}}" method = "POST">
+                        {{form.hidden_tag()}}
+                        <!-- <input type="text" class="seaInp" placeholder="location: eg.London,uk"> -->
+                        {{form.location(class="seaInp")}}
+                       {{form.submit(class="go")}}
+                    </form>
+                </div>
+            </main>
+        </nav>
+    </header>
+</body>
+</html>
