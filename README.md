@@ -1,19 +1,30 @@
-WEATHER GO
-A web based web app for viewing weather conditions.
+## Weathergo
 
-using pyowm API for weather services
+###Team Members
 
-Penylove(frontend and backend for API handling)-integration lead
-Gettymoor (frontend and grpahic designer)
+*Gertrude Gamado
+*Innocent Kwasitse
+*John Bledua
+*Prince Nyamadi
 
-Innokid96(Backend User login and sign up)
-johN-Lyrics(frontend signup and login)
+###Project Description
+Weather Go is a web-based flask app. Used to get the weather condition in 
+areas in around the globe.
+It uses an API to fetch weather info and return them to the use.
 
 
+### Technologies used
+* Flask
+*HTML
+*CSS
 
-**********23rd July,2019***************
+###MVP goals attained
+*Web app is able to retrieve data from pyowm api
 
-MVP goal
-Configure Api to take request and return values to the web-app
-handle errors
-Style the home page
+
+###Todos
+*Error handling - handle errors that could occur during operation
+*Integrate with login,sign-up backend
+*Add Id and longitude and latitude search functions 
+*Style elements on the page
+*host on heroku
