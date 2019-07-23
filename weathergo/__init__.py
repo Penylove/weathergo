@@ -33,5 +33,49 @@ def result():
     form = Location()
     obs = owm.weather_at_place(form.location.data)
     w = obs.get_weather()
-    location_data = w.get_wind()
-    return render_template('result.html',location_data = location_data,form = form)
+    location_data = form.location.data
+
+    # get weather infos --
+
+    wind = w.get_wind()
+    ref_time = w.get_reference_time(timeformat='iso')
+
+    clouds = w.get_clouds()
+
+    rain = w.get_rain()
+
+    snow = w.get_snow()
+
+    humidity = w.get_humidity()
+
+    pressure = w.get_pressure()
+
+    temperature = w.get_temperature(unit = 'celsius')
+
+    weather_stat = w.get_status()
+
+    detailed_w_stats = w.get_detailed_status()
+
+    weather_icon_name = w.get_weather_icon_url()
+
+
+    # get forecast
+    # fc3h = owm.three_hours_forecast(form.location.data)
+
+    # fc24h = owm.daily_forecast(form.location.data)
+
+    # forecaster
+    # f3 = fc3h.get_forcast()
+    # f24 = fc24h.get_forcast()
+
+
+    # when_rain_3 = fc3h.when_rain()
+    # when_sun_3 = fc3h.when_sun()
+
+    # when_clouds_3 = fc3h.when_clouds()
+
+    # when_fog_3 = fc3h.when_fog()
+
+    # when_snow_3 = fc3h.when_snow()
+
+    return render_template('result.html',weather_stat = weather_stat, location_data = location_data,form = form,ref_time = ref_time, rain = rain, wind = wind,humidity=humidity,clouds =clouds,snow=snow,temperature = temperature,weather_icon_name = weather_icon_name,pressure = pressure, detailed_w_stats = detailed_w_stats)
