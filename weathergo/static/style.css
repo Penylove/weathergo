@@ -39,11 +39,14 @@
 
 }
 .main-page{
+    
+}
+
+.main-page .msg{
     text-align:center;
     margin-top:9em;
     font-family: bauhaus;
 }
-
 .main-page .msg h1{
     font-size:400%;
 }
@@ -99,4 +102,45 @@
 }
 input:focus{
     outline-offset: 0;
+}
+
+.loc{
+    font-size:300%;
+    padding:1em;
+}
+.ref-time{
+    font-size:40%;
+    color:#ccc;
+}
+.weather-icon{
+   text-align:center;
+}
+
+.weather-icon-img{
+    
+}
+.weather-icon-img img{
+   
+}
+
+.temp{
+    margin-top:2em;
+    font-size:250%;
+}
+
+.weather-info{
+    width:10em;
+    height:10em;
+    float:left;
+    text-align:center;
+    box-shadow:1px 2px 2px 1px #ccc;
+    margin:.5em .5em;
+}
+.conditions{
+    /* text-align:center; */
+    /* display: inline; */
+    /* width:100%; */
+    margin-top:3em;
+    margin-left:9em;
+   /*  padding-left:7em; */
 }
