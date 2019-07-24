@@ -10,10 +10,16 @@
   }
   body{
       font-family: bauhaus;
+      background-image: url("img/cloud.jpg");
+      background-repeat: no-repeat;
+      background-size: 120%;
+     
   }
 .logo{
     /* background-color:#323234; */
     display: inline;
+    margin-left:2em;
+    margin-top:2em;
 
 }
 
@@ -25,6 +31,7 @@
 .nav .list-items{
     display:inline-block;
     float:right;
+    margin-right:2em;
 }
 
 .nav .list-items ul li{
@@ -38,6 +45,13 @@
     
 
 }
+.nav .list-items ul li a:visited,.nav .list-items ul li a:active{
+    color:#cccccc;
+}
+
+.nav .list-items ul li a:hover{
+    color:#ffffff;
+}
 .main-page{
     
 }
@@ -46,6 +60,7 @@
     text-align:center;
     margin-top:9em;
     font-family: bauhaus;
+    color:#ccc;
 }
 .main-page .msg h1{
     font-size:400%;
@@ -63,7 +78,7 @@
 }
 
 .search input{
-    padding:.62em;
+    padding:.4em;
     display: block;
     margin:0 auto;
    
@@ -73,33 +88,44 @@
 .search .seaInp{
     border-radius:5px;
     border-style:none;
-    border-bottom:1px solid black;
+    border-bottom:2px solid #6ACBE8;
     width:15em;
+    background-color:transparent;
+    font-size:120%;
 }
+
 .search .go{
-    margin-top:0.6em;
-    width:10em;
+    margin-top:0.7em;
+    width:3em;
     border-radius:5px;
     border-style:none;
     cursor:pointer;
+    font-size:120%;
+    color:white;
+}
+.search input[placeholder]{
+    color:#ccc;
 }
 
 /* input and anchor animations */
 
 .search .seaInp:focus{
     outline:none;
-    border-bottom:1px solid green;
+    border-bottom:3px solid #6ACBE8;
+    /* background-color:#ccc; */
 }
 
 .search .go{
-    background-color:green;
-    color:white;
+    background-color:#6ACBE8;
+    color:#fff;
+    /* font-size:140%; */
    
 }
 
 .search .go:hover{
-    box-shadow: 4px 1px 4px 5px #ccc;
+    box-shadow: 1px -1px 1px  #fff;
 }
+
 input:focus{
     outline-offset: 0;
 }
@@ -107,6 +133,7 @@ input:focus{
 .loc{
     font-size:300%;
     padding:1em;
+    color:#cccccc;
 }
 .ref-time{
     font-size:40%;
@@ -114,6 +141,7 @@ input:focus{
 }
 .weather-icon{
    text-align:center;
+   color:#cccccc;
 }
 
 .weather-icon-img{
@@ -124,8 +152,8 @@ input:focus{
 }
 
 .temp{
-    margin-top:2em;
-    font-size:250%;
+    font-size:350%;
+    color:#cccccc;
 }
 
 .weather-info{
@@ -133,8 +161,10 @@ input:focus{
     height:10em;
     float:left;
     text-align:center;
-    box-shadow:1px 2px 2px 1px #ccc;
+    /*box-shadow:1px 2px 2px 1px #ccc;*/
     margin:.5em .5em;
+    background-color:#cccccc;
+    color:#000000;
 }
 .conditions{
     /* text-align:center; */
@@ -143,4 +173,57 @@ input:focus{
     margin-top:3em;
     margin-left:9em;
    /*  padding-left:7em; */
+    color:#000000;
+}
+
+
+.nav .logo{
+  width:3em;
+  height:2em;
+  overflow: hidden;
+}
+
+.nav .logo-img{
+    width:7em;
+    height:3em;
+}
+
+
+
+/* i{
+    display:block;
+    font-size:150%;
+} */
+
+.font_awesome{
+    font-size:250%;
+    display: block;
+    padding:.5em;
+}
+
+.list-items ul li a {
+    
+}
+
+.about-page{
+    text-align:justify;
+    padding:5em;
+}
+.about-page h1{
+    font-size:350%;
+    text-align:center;
+    color:#cccccc;
+}
+.about-page .content{
+    background-color:#ffffff;
+    margin-top:3em;
+    padding:2em;
+
+}
+.about-page .content .article p{
+    line-height: 1em;
+    padding:10px;
+}
+.about-page .content .article .stdout{
+    border-left:5px solid yellow;
 }
