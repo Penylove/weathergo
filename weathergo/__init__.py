@@ -21,6 +21,7 @@ from weathergo.forms import Location
 def index():
     form = Location()
     # if form.validate_on_submit():
+
         
     #     return render_template(url_for('result'))
     # else:
@@ -79,3 +80,7 @@ def result():
     # when_snow_3 = fc3h.when_snow()
 
     return render_template('result.html',weather_stat = weather_stat, location_data = location_data,form = form,ref_time = ref_time, rain = rain, wind = wind,humidity=humidity,clouds =clouds,snow=snow,temperature = temperature,weather_icon_name = weather_icon_name,pressure = pressure, detailed_w_stats = detailed_w_stats)
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
