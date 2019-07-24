@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-<div class="resut">
+<div class="result">
     <div class="loc">
         {{location_data.upper()}}
         <div class="ref-time">
@@ -15,7 +15,7 @@
                     {{detailed_w_stats}}
             </div>
             <div class="temp">
-                {{temperature['temp']}} &deg;C
+                <i class="fas fa-thermometer-three-quarters"></i> &nbsp;{{temperature['temp']}} &deg;C
             </div>
             
         </div>
@@ -24,6 +24,9 @@
     <div class="conditions">
     <div class="weather-info">
         <div class="info-type">
+           <span class="font_awesome">
+                <i class="fas fa-wind"></i>  
+           </span>
           Wind
         </div>
         <div class="info-detail">
@@ -54,6 +57,9 @@
     <!--Humidity  -->
     <div class="weather-info">
         <div class="info-type">
+                <span class="font_awesome">
+                        <!-- <i class="fas fa-humidity"></i> -->
+                </span>
           Humidity
         </div>
         <div class="info-detail">
@@ -72,6 +78,9 @@
     <!--Cloud  -->
     <div class="weather-info">
         <div class="info-type">
+                <span class="font_awesome">
+                        <i class="fas fa-cloud"></i>
+                </span>
           Cloud
         </div>
         <div class="info-detail">
@@ -90,6 +99,7 @@
     <!-- rain -->
     <div class="weather-info">
         <div class="info-type">
+                <span class="font_awesome"><i class="fas fa-cloud-rain"></i></span>
          Rain
         </div>
         <div class="info-detail">
@@ -108,6 +118,10 @@
     <!-- snow -->
     <div class="weather-info">
         <div class="info-type">
+                <span class="font_awesome">
+                        <i class="far fa-snowflake"></i>
+                </span>
+               
          Snow
         </div>
         <div class="info-detail">
