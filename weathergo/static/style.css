@@ -13,6 +13,9 @@
       background-image: url("img/cloud.jpg");
       background-repeat: no-repeat;
       background-size: 120%;
+      height:100vh;
+      background-size: cover;
+      object-fit: cover;
      
   }
 .logo{
@@ -205,9 +208,10 @@ input:focus{
     
 }
 
-.about-page{
+.about-page{1
     text-align:justify;
     padding:5em;
+    width:100%;
 }
 .about-page h1{
     font-size:350%;
@@ -287,9 +291,9 @@ input:focus{
     }
 
     .weather-info{
-      width:90vw;
+      width:96vw;
     clear: both;
-    margin:.4em .75em;
+    margin:.4em .55em;
     height:5em;
     /* margin-top:1.5em; */
     text-align:justify;
@@ -314,13 +318,15 @@ input:focus{
     /* about page */
     .about-page{
         clear:both;
-        width:100vw;
-        margin:0 0;
+        width:100%;
+        /* margin:0 0; */
+        margin:0;
     }
     .about-page h1{
         font-size:350%;
         text-align:center;
         color:#cccccc;
+
     }
     .about-page .content{
         background-color:#ffffff;
@@ -334,11 +340,14 @@ input:focus{
         display:inline-block;
         /* padding:1em; */
     }
+    .conditions span:nth-child(2){
+        line-height:
+    }
     .info-type,.info-detail{
         display: inline-block;
         padding:1em;
     }
     .info-detail{
-        font-size:150%;
+        font-size:120%;
     }
 }
