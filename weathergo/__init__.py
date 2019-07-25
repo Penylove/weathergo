@@ -16,22 +16,35 @@ owm = pyowm.OWM(pyown_api_key)
 from flask import render_template,url_for,flash,redirect,request
 from weathergo.forms import Location
 
+def checkLocation(data__):
+    print('checking')
+    try:
+       owm.weather_at_place(data__)
+       return redirect(url_for('result'))
+       print('checked')
+    except:
+        message = 'Location not found.'
+        return message
+         
+  
 @app.route('/')
 @app.route('/home', methods = ['GET','POST'])
 def index():
     form = Location()
-    # if form.validate_on_submit():
-
-        
-    #     return render_template(url_for('result'))
-    # else:
-    #     return render_template('k.html')
+    
+   
     return render_template('index.html',form = form)
 
 
 @app.route('/result', methods = ['GET','POST'])
 def result():
+    
     form = Location()
+    try:
+        owm.weather_at_place(form.location.data)
+    except:
+        flash('not found')
+        return redirect(url_for('index'))
     obs = owm.weather_at_place(form.location.data)
     w = obs.get_weather()
     location_data = form.location.data
@@ -84,3 +97,4 @@ def result():
 @app.route('/about')
 def about():
     return render_template('about.html')
+

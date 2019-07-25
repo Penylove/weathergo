@@ -10,7 +10,15 @@
         {{form.hidden_tag()}}
         <!-- <input type="text" class="seaInp" placeholder="location: eg.London,uk"> -->
         {{form.location(class="seaInp", placeholder="London,uk")}}
+        {% with message = get_flashed_messages() %}
+        {% if message %}
+        <div class="error">
+            {{message[0]}}
+        </div>
+        {%endif%}
+        {% endwith %}
        {{form.submit(class="go", value="GO")}}
+
     </form>
 </div>
 {% endblock content %}

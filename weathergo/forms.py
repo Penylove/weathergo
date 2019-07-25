@@ -7,4 +7,8 @@ from wtforms.validators import DataRequired,Length,Email,EqualTo,ValidationError
 
 class Location(FlaskForm):
     location = StringField('location',validators=[DataRequired(), Length(min = 2,max=20)])
+
     submit = SubmitField('go')
+
+def funcname(self, parameter_list):
+    raise NotImplementedError
