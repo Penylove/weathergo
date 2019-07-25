@@ -52,7 +52,7 @@ def result():
 
     # get weather infos --
 
-    wind = w.get_wind()
+    wind = w.get_wind(unit='meters_sec')
     ref_time = w.get_reference_time(timeformat='iso')
 
     clouds = w.get_clouds()
