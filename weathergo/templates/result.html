@@ -15,7 +15,7 @@
                     {{detailed_w_stats}}
             </div>
             <div class="temp">
-                <i class="fas fa-thermometer-three-quarters"></i> &nbsp;{{temperature['temp']}} &deg;C
+                <i class="fas fa-thermometer-three-quarters"></i> &nbsp;{{temperature['temp']}} &deg;
             </div>
             
         </div>
@@ -32,10 +32,10 @@
         </div>
         <div class="info-detail">
             <p>
-                <span class = "mea_name">Speed</span> : {{wind['speed']}}
+                <span class = "mea_name">Speed</span> : {{wind['speed']}} m/s
             </p>
             <p>
-                <span class="mea_name">Degrees</span>: {{wind['deg']}}
+                <span class="mea_name">Degrees</span>: {{wind['deg']}} &deg;
             </p>
         </div>
     </div>
@@ -66,7 +66,7 @@
         <div class="info-detail">
             <p>
                 <span class = "mea_name humidity">
-                    {{humidity}}
+                    {{humidity}} %
                 </span> 
             </p>
           
@@ -87,7 +87,7 @@
         <div class="info-detail">
             <p>
                 <span class = "mea_name s1">
-                    {{clouds}}
+                    {{clouds}} %
                 </span> 
             </p>
           
@@ -128,8 +128,20 @@
         <div class="info-detail">
             <p>
                 <span class = "mea_name s1">
-                    {{snow}}
+                    {% if snow != {}: %}
+                        {% for i,n in snow: %}
+                        <span class = "mea_name s1">
+                                {{i+' : '+n}}
+                        </span> 
+                        {%endfor%}
+                    {% else: %}
+                    <div>
+                        None
+                    </div>
+
+                    {% endif%}
                 </span> 
+
             </p>
           
         </div>
