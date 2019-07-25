@@ -1,6 +1,7 @@
 from flask import Flask
 import pyowm
 
+from flask.ext.heroku import Heroku
 
 
 # instance
