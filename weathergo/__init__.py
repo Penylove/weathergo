@@ -1,7 +1,7 @@
 from flask import Flask
 import pyowm
 
-from flask.ext.heroku import Heroku
+# from flask.ext.heroku import Heroku
 
 
 # instance
@@ -44,7 +44,7 @@ def result():
     try:
         owm.weather_at_place(form.location.data)
     except:
-        flash('not found')
+        flash('search not found')
         return redirect(url_for('index'))
     obs = owm.weather_at_place(form.location.data)
     w = obs.get_weather()
