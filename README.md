@@ -2,10 +2,10 @@
 
 ### Team Members
 
-* Gertrude Gamado
+* Gertrude Kugblenu
 * Innocent Kwasitse
 * John Bledua
-* Prince Nyamadi
+* Prince Nyamadi 
 
 ### Project Description
 Weather Go is a web-based flask app. Used to get the weather condition in 
@@ -29,8 +29,8 @@ It uses an API to fetch weather info and return them to the use.
 * Error handling - handle errors that could occur during operation
 * Integrate with login,sign-up backend
 * Add Id and longitude and latitude search functions 
-* Style elements on the page ....90%___done
-* host on Heroku
-* Add weather alert function ___next to do
+* Style elements on the page ....96%___done
+* deploy to Heroku..........100% done *weathergoflask-app.herokuapp.com
+* Add weather alert function ___next to do 
 * Forecaster __ get PRO account for this feature
 * 
