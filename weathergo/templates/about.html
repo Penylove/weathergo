@@ -1,27 +1,78 @@
 {% extends 'layout.html' %}
 {% block content %}
-    <div class="about-page">
-        <h1>
-            ABOUT WEATHERGO
-        </h1>
-        <div class="content">
-            <div class="article">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum incidunt dolorem doloribus architecto illo hic! Facere dolorem quis repudiandae, obcaecati ducimus ipsum ipsa, vero dignissimos culpa, provident aperiam laudantium atque.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique itaque voluptas pariatur corrupti deleniti, dolores nostrum? Blanditiis corporis sequi nihil maiores delectus adipisci obcaecati, minima facilis, aliquam officia enim ratione?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga repellat inventore hic accusantium quis dolorem consectetur blanditiis nam iste fugiat aperiam amet asperiores, neque recusandae ea odio libero illum nihil.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla id ipsam nihil laboriosam ad non voluptas saepe aperiam, officia commodi, modi, rem est! Laudantium quia illum placeat culpa delectus doloribus.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi facilis molestiae eos blanditiis enim soluta, recusandae libero perspiciatis debitis inventore tenetur quo ea voluptas earum officiis dolor consequuntur iste praesentium.lorem
-                    
-                </p>
-                <p class="stdout">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ullam, iure commodi eos aliquid vitae esse cumque, rerum eum accusamus, facilis eveniet? Commodi, odit? Beatae numquam sunt assumenda doloribus quis.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error odio iste non? Nisi dolorem quaerat hic dolore, maiores quidem impedit similique mollitia magni explicabo saepe autem accusantium itaque inventore natus?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda suscipit quas iure optio voluptate? Officia accusantium aliquid quibusdam voluptatum temporibus, quos iusto eligendi suscipit aliquam beatae perspiciatis numquam possimus aperiam.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae natus illum magni, sit eos suscipit nulla, facilis laboriosam aliquid minus sequi! Ipsum animi aliquam, aut nesciunt cupiditate ipsam? Facilis, ad.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, nesciunt minima facilis quidem obcaecati veniam pariatur sequi aperiam praesentium modi natus consequuntur at molestiae architecto excepturi necessitatibus mollitia sit fugit!
-                </p>
+ <div class="about_w">
+     <div class="about_w_header">
+         <h1>About Weather</h1>
+     </div>
+     <div class="about_w_content">
+         <article>
+             <p>
+                 <span class="dropCap">WeatherGo</span> is an app designed to get weather information from locations around the world.
+             </p>
+             <p>It uses open weather map API to get weather data. Its a simple app that allows its users to get weather information at any time anywhere </p>
+             <p>This app was developed by;</p>
+
+         </article>
+        <div class="about_w_bio">
+            <!-- gertrude -->
+            <div class="about_w_bio_data">
+                <div class="about_w_bio_img">
+                    <img src="{{url_for('static', filename='img/gert.jpg')}}" alt="">
+                </div>
+                <div class="about_w_bio_text">
+                    <p class="bio_name">Gertrude</p>
+                    <p>Tech enthusiast, music lover, front-end developer, UI & UX expert</p>
+                </div>
             </div>
+            <!-- /gertrude -->
+            <!-- Inno -->
+            <div class="about_w_bio_data">
+                <div class="about_w_bio_img">
+                    <img src="" alt="Innocent">
+                </div>
+                
+                <div class="about_w_bio_text">
+                        <p class="bio_name">Innocent Divine Kwasitse </p>
+                        <p>
+                            Electronics expert, full-stack developer, hardware expert
+                        </p>
+                </div>
+            </div>
+
+            <!-- /inno -->
+            <!-- John -->
+            <div class="about_w_bio_data">
+                    <div class="about_w_bio_img">
+                        <img src="{{url_for('static', filename='img/john.jpg')}}" alt="">
+                    </div>
+                    <div class="about_w_bio_text">
+                        <p class="bio_name">
+                            John Bledua aka JohnLyrics
+                        </p>
+                        <p>
+                           
+                            "Developing knowledge in computer programming, skilled in hardware, networking and sound engineering .
+                            Looking forward to a carrier in cyber security."
+                        </p>
+                    </div>
+                </div>
+
+            <!-- /John -->
+            <!-- Prince -->
+            <div class="about_w_bio_data">
+                    <div class="about_w_bio_img">
+                        <img src="" alt="Prince">
+                    </div>
+                    <div class="about_w_bio_text">
+                        <p class="bio_name">
+                            Prince Nyamadi
+                        </p>
+                        <p>programmer</p>
+                    </div>
+                </div>
+            <!-- /Prince -->
+
         </div>
-    </div>
+     </div>
+ </div>
 {% endblock content %}

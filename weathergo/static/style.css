@@ -12,8 +12,8 @@
       font-family: bauhaus;
       background-image: url("img/cloud.jpg");
       background-repeat: no-repeat;
-      background-size: 120%;
       height:100vh;
+      background-attachment: fixed;
       background-size: cover;
       object-fit: cover;
      
@@ -87,7 +87,57 @@
    
     
 }
+  /* about page */
+  .about_w{
+    color:#ccc;
+}
+.about_w_header{
+    text-align:center;
+}
+.about_w_header h1{
+    color:#cccccc;
+}
+.about_w_content article p{
+    text-align:center;
+}
+.about_w_bio{
 
+}
+
+.about_w_bio_data{
+    width:20em;
+    background: #ffffff;
+    overflow: hidden;
+    color:black;
+    height:30em;
+    margin:.3em;
+    display: inline-block;
+    border-radius:9px;
+}
+.about_w_bio_img{
+    width:19em;
+    height:19em;
+    border:5px solid #cccccc;
+    border-radius:100%;
+    /* height:15em; */
+    overflow: hidden;
+    display: block;
+}
+.about_w_bio_img img{
+   width:100%;
+    object-fit:cover;
+
+}
+.bio_name{
+    text-align:center;
+    font-weight: 600;
+   
+
+}
+.about_w_bio_text p{
+    padding:.3em;
+}
+/* /about page */
 .search .seaInp{
     border-radius:5px;
     border-style:none;
@@ -205,32 +255,9 @@ input:focus{
 }
 
 .list-items ul li a {
-    
+    color:#ccc;
 }
 
-.about-page{1
-    text-align:justify;
-    padding:5em;
-    width:100%;
-}
-.about-page h1{
-    font-size:350%;
-    text-align:center;
-    color:#cccccc;
-}
-.about-page .content{
-    background-color:#ffffff;
-    margin-top:1em;
-    padding:2em;
-
-}
-.about-page .content .article p{
-    line-height: 1em;
-    padding:10px;
-}
-.about-page .content .article .stdout{
-    border-left:5px solid yellow;
-}
 
 .error{
     text-align:center;
@@ -245,9 +272,14 @@ input:focus{
     text-align: center;
     margin-top:2em;
 }
-
-
-/* fone size */
+.mea_name{
+    font-weight:700;
+}
+.info-name{
+    /* line-height: 2; */
+    padding-bottom: .1em;
+}
+/* fone size *****************************************************/
 
 @media only screen and (max-width: 600px) {
     body{
@@ -286,68 +318,61 @@ input:focus{
         color:#cccccc;
      }
      .temp{
-        font-size:450%;
+        font-size:3em;
         color:#cccccc;
     }
 
     .weather-info{
-      width:96vw;
+      /* width:96vw; */
+      width:100%;
     clear: both;
-    margin:.4em .55em;
-    height:5em;
+    margin:.5em 0;
+    height:4em;
     /* margin-top:1.5em; */
     text-align:justify;
-    display:inline-block;
-    border-radius: 9px;
+    /* display:inline-block; */
+    border-radius: 3px;
        
     }
 
     .conditions{
      
-        margin:3em 0;
+        margin:2em 0;
        
        /*  padding-left:7em; */
         color:#000000;
     }
     .font_awesome{
-        font-size:250%;
+        font-size:200%;
         display: inline-block;
         padding:0;
     }
 
-    /* about page */
-    .about-page{
-        clear:both;
-        width:100%;
-        /* margin:0 0; */
-        margin:0;
-    }
-    .about-page h1{
-        font-size:350%;
-        text-align:center;
-        color:#cccccc;
-
-    }
-    .about-page .content{
-        background-color:#ffffff;
-        margin-top:3em;
-        /* padding:2em; */
-        width:100vw;
-        margin:0;
-        clear:both;
-    }
+  
     .conditions span{
         display:inline-block;
+        box-sizing: border-box;
+        text-align: center;
         /* padding:1em; */
+        /* margin:50% auto; */
     }
     .conditions span:nth-child(2){
-        line-height:
+        /* line-height: */
     }
     .info-type,.info-detail{
         display: inline-block;
-        padding:1em;
+        /* padding:1em; */
     }
+    
     .info-detail{
         font-size:120%;
     }
+    .info-type{
+        padding:.4em;
+        /* padding-bottom:1em; */
+    }
+}
+
+@media only screen and (orientation: landscape){
+    
 }
