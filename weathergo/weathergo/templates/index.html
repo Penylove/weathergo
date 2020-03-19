@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="msg">
+    <h1>Welcome to Weather Go</h1>
+    <h4>Get your weather information on the Go</h4>
+    <h5>Get Started, Type location</h5>
+</div>
+<div class="search">
+    <form action="{{url_for('result')}}" method = "POST">
+        {{form.hidden_tag()}}
+        <!-- <input type="text" class="seaInp" placeholder="location: eg.London,uk"> -->
+        {{form.location(class="seaInp", placeholder="London,uk")}}
+       {{form.submit(class="go")}}
+    </form>
+</div>
+{% endblock content %}

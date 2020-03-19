@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="resut">
+    <div class="loc">
+        {{location_data.upper()}}
+        <div class="ref-time">
+            {{ref_time}} GMT
+        </div>
+    </div>
+        <div class="weather-icon">
+            <div class="weather-icon-img">
+                    <img src="{{weather_icon_name}}" alt="weather-icon">
+            </div>
+            <div class="w-det">
+                    {{detailed_w_stats}}
+            </div>
+            <div class="temp">
+                {{temperature['temp']}} &deg;C
+            </div>
+            
+        </div>
+    
+    <!-- wind -->
+    <div class="conditions">
+    <div class="weather-info">
+        <div class="info-type">
+          Wind
+        </div>
+        <div class="info-detail">
+            <p>
+                <span class = "mea_name">Speed</span> : {{wind['speed']}}
+            </p>
+            <p>
+                <span class="mea_name">Degrees</span>: {{wind['deg']}}
+            </p>
+        </div>
+    </div>
+
+    <!-- Pressure -->
+    <div class="weather-info">
+        <div class="info-type">
+          Pressure
+        </div>
+        <div class="info-detail">
+            <p>
+                <span class = "mea_name">Pressure</span> : {{pressure['press']}}
+            </p>
+            <p>
+                <span class="mea_name">Sea Level</span> : {{pressure['sea_level']}}
+            </p>
+        </div>
+    </div>
+
+    <!--Humidity  -->
+    <div class="weather-info">
+        <div class="info-type">
+          Humidity
+        </div>
+        <div class="info-detail">
+            <p>
+                <span class = "mea_name humidity">
+                    {{humidity}}
+                </span> 
+            </p>
+          
+        </div>
+
+      
+        
+    </div>
+
+    <!--Cloud  -->
+    <div class="weather-info">
+        <div class="info-type">
+          Cloud
+        </div>
+        <div class="info-detail">
+            <p>
+                <span class = "mea_name s1">
+                    {{clouds}}
+                </span> 
+            </p>
+          
+        </div>
+
+      
+        
+    </div>
+
+    <!-- rain -->
+    <div class="weather-info">
+        <div class="info-type">
+         Rain
+        </div>
+        <div class="info-detail">
+            <p>
+                <span class = "mea_name s1">
+                    {{rain['3h']}}
+                </span> 
+            </p>
+          
+        </div>
+
+      
+        
+    </div>
+
+    <!-- snow -->
+    <div class="weather-info">
+        <div class="info-type">
+         Snow
+        </div>
+        <div class="info-detail">
+            <p>
+                <span class = "mea_name s1">
+                    {{snow}}
+                </span> 
+            </p>
+          
+        </div>
+
+      
+        
+    </div>
+
+
+</div>
+</div>
+    
+    {% endblock content %}
+</body>
+</html>
